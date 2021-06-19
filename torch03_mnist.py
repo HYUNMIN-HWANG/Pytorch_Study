@@ -16,7 +16,7 @@ print('Using PyTorch version : ', torch.__version__, ', Device : ', DEVICE)
 # Using PyTorch version :  1.9.0 , Device :  cuda
 
 BATCH_SIZE = 32
-# MLP 모딜을 학습할 때 필요한 데이터 개수의 단위
+# MLP 모델을 학습할 때 필요한 데이터 개수의 단위
 # Mini-Batch 1개 단위에 데이터가 32개 구성되어 있는 것
 # Mini-Batch 1개로 학습 1회를 진행함
 # Iteration : Mini-Batch 1개를 이용해 학습하는 횟수, 전체 데이터 개수에서 Mini-Batch 1개를 구성하는 데이터 개수로 나눈 몫만큼
@@ -56,7 +56,7 @@ pltsize = 1
 plt.figure(figsize=(10*pltsize, pltsize))   # (10,1)크기의 그림판을 만든다.
 for i in range(10):
     plt.subplot(1, 10, i+1)                 # i+1 번째에 그림을 넣는다.
-    plt.axis('off')
+    plt.axis('off')                         # 축을 제거한다.
     plt.imshow(X_train[i, :, :, :].numpy().reshape(28,28), cmap="gray_r")
     plt.title("Class : " + str(y_train[i].item()))
 plt.show()
