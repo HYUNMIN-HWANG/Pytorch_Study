@@ -1,7 +1,6 @@
 # IMDb Dataset
 # 간단한 Sentiment Analysis Task
 
-from typing import Sequence
 from torchtext.legacy import data
 from torchtext.legacy import datasets
 
