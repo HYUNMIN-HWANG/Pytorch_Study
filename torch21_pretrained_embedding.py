@@ -126,3 +126,9 @@ devic= torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(datasets=(train_data, valid_data, test_data), 
                                                                             batch_size=30, 
                                                                             device=device)
+                                                                            
+                                                                            
+
+
+
+                                                                            
