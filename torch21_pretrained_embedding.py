@@ -121,7 +121,7 @@ print(TEXT.vocab.vectors.shape)
 # Spliting Valid set
 train_data, valid_data = train_data.split(random_state=random.seed(0), split_ratio=0.8)
 
-devic= torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(datasets=(train_data, valid_data, test_data), 
                                                                             batch_size=30, 
