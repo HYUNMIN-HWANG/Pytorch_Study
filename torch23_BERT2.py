@@ -236,3 +236,14 @@ epoch = 0
 test_loss, test_acc = evaluate(model, test_iterator, loss_fn, epoch, **model_config)
 print('')
 print(f'Test Loss : {test_loss:.4} | Test Acc : {test_acc:.4}')
+
+
+
+
+
+
+
+
+
+
+
