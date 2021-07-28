@@ -1,3 +1,3 @@
 # Pytorch_Study
-**파이토치 기본 학습하기**   
-교재 '파이썬 딥러닝 파이토치'(이경택, 방성수, 안상준 지음, 2020)
+📂 Python_DeepLearning_Pytorch     
+📂 DeepLearning_with_Pytorch     
