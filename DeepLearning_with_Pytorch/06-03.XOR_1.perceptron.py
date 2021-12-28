@@ -1,7 +1,6 @@
 # 단층 퍼셉트론 구현하기
 import torch
 import torch.nn as nn
-from torch.nn.functional import sigmoid
 
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
