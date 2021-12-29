@@ -11,6 +11,7 @@ if device == 'cuda' :
 X = torch.FloatTensor([[0,0],[0,1],[1,0],[1,1]]).to(device)
 Y = torch.FloatTensor([[0],[1],[1],[0]]).to(device)
 
+# 단층
 linear = nn.Linear(2, 1, bias=True)
 sigmoid = nn.Sigmoid()
 model = nn.Sequential(linear, sigmoid).to(device)
